@@ -1,0 +1,590 @@
+.activeStat {
+  background-color: black;
+  color: white;
+}
+
+.roomnav {
+  overflow: hidden;
+  position: fixed;
+  background-color: #821432;
+  padding: 10px 24px;
+  width: 100%;
+  z-index: 100;
+}
+
+.roomnav a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+
+  padding: 8px 10px;
+}
+
+.roomnav a:hover {
+  float: left;
+  display: block;
+  color: #821432;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  background: #ffffff;
+  border: none;
+  border-radius: 64px;
+
+  padding: 8px 10px;
+}
+
+.livestream {
+  position: fixed;
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+  top: 0px;
+}
+
+.main .left-collpase {
+  background-color: white;
+  border-radius: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  width: 300px;
+  height: 25px;
+
+  margin-left: 75px;
+  margin-top: 72.5px;
+
+  position: fixed;
+  z-index: 100;
+
+  cursor: pointer;
+}
+
+.main .middle-collpase {
+  background-color: white;
+  border-radius: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  width: 600px;
+  height: 25px;
+
+  margin-left: 405px;
+  margin-top: 72.5px;
+
+  position: fixed;
+  z-index: 100;
+
+  cursor: pointer;
+}
+
+.main .right-collpase {
+  background-color: white;
+  border-radius: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  width: 430px;
+  height: 25px;
+
+  margin-left: 1035px;
+  margin-top: 72.5px;
+
+  position: fixed;
+  z-index: 100;
+
+  cursor: pointer;
+}
+
+.main .left-collpase #hide-btn1, .main .middle-collpase #hide-btn2, .main .right-collpase #hide-btn3 {
+  line-height: 0;
+  text-align: center;
+
+  display: block;
+
+  margin-top: 8px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main .room-info {
+  background-color: white;
+  border-radius: 16px;
+  width: 300px;
+  height: 175px;
+
+  margin-left: 75px;
+  margin-top: 125px;
+
+  position: fixed;
+  z-index: 100;
+}
+
+.main .room-menu {
+  background-color: white;
+  border-radius: 16px;
+  width: 300px;
+  height: 360px;
+
+  margin-left: 75px;
+  margin-top: 315px;
+
+  position: fixed;
+  z-index: 100;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main .room-menu, .main .room-info, .main .left-collpase, .main .display-room, .main .chat-info, .main .chat-options, .main .chat-room, .room-fade {
+  opacity: 75%;
+  transition-duration: 0.3s;
+}
+
+.main .room-menu:hover, .main .room-info:hover, .main .left-collpase:hover, .main .display-room:hover, .main .chat-info:hover, .main .chat-options:hover, .main .chat-room:hover, .room-fade:hover {
+  opacity: 100%;
+  transition-duration: 0.3s;
+}
+
+.main .room-info .upper {
+  border-bottom-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  padding-bottom: 8px;
+
+  margin: 8px;
+}
+
+.store-info {
+  display:inline-block;
+  vertical-align: top;
+  line-height: 75%;
+
+  margin-left: 8px;
+}
+
+.main .room-info .lower #phone-sym, .main .room-info .lower #phone-num {
+  display:inline-block;
+  vertical-align: top;
+}
+
+.main .room-info .lower {
+  padding-top: 4px;
+}
+
+.main .room-info .lower .open {
+  display: block;
+}
+
+.main .room-info .lower #open-info,  .main .room-info .lower #open-sym {
+  display: inline-block;
+}
+
+.main .room-menu .buttons #btn1, .main .room-menu .buttons #btn2, .main .room-menu .buttons #btn3, .main .room-menu .buttons #btn4, .main .room-menu .buttons #btn-more {
+  padding: 16px;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  transition-duration: 0.3s;
+
+  border-radius: 8px;
+
+  background-color: black;
+  color: white;
+
+  margin-top: 6px;
+}
+
+.main .room-menu .buttons #btn1:hover, .main .room-menu .buttons #btn2:hover, .main .room-menu .buttons #btn3:hover, .main .room-menu .buttons #btn4:hover, .main .room-menu .buttons #btn-more:hover {
+  background-color: #821432;
+}
+
+.main .display-room {
+  background-color: white;
+  border-radius: 16px;
+  width: 600px;
+  height: 550px;
+
+  margin-left: 405px;
+  margin-top: 125px;
+
+  position: fixed;
+  z-index: 100;
+}
+
+.main .chat-info {
+  background-color: white;
+  border-radius: 16px;
+  width: 250px;
+  height: 200px;
+
+  margin-left: 1035px;
+  margin-top: 125px;
+
+  padding-left: 16px;
+  padding-right: 16px;
+
+  position: fixed;
+  z-index: 100;
+}
+
+.main .chat-options {
+  background-color: white;
+  border-radius: 16px;
+  width: 165px;
+  height: 200px;
+
+  margin-left: 1300px;
+  margin-top: 125px;
+
+  padding-left: 16px;
+  padding-right: 16px;
+
+  position: fixed;
+  z-index: 100;
+}
+
+.main .chat-room {
+  background-color: white;
+  border-radius: 16px;
+  width: 430px;
+  height: 335px;
+
+  margin-left: 1035px;
+  margin-top: 340px;
+
+  position: fixed;
+  z-index: 100;
+}
+
+.main .display-room img {
+  width: 568px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+
+  border-radius: 8px;
+}
+
+.bottomnav {
+  overflow: hidden;
+  position: fixed;
+  background-color: #821432;
+  width: 100%;
+  height: 25px;
+  z-index: 100;
+
+  position: fixed;
+  bottom: 0;
+}
+
+.interactives #leave, .interactives #random {
+  padding: 16px;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  transition-duration: 0.3s;
+
+  border-radius: 8px;
+
+  background-color: black;
+  color: white;
+
+  margin-top: 6px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.interactives #leave:hover, .interactives #random:hover {
+  transition-duration: 0.3s;
+  background-color: #821432;
+}
+
+.display-room #people-icon, .display-room #people-counter {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 75%;
+}
+
+.display-room #people-icon {
+  margin-left: 542px;
+  margin-top: 16px;
+}
+
+.chat-room .texts #texts {
+  border-radius: 8px;
+  border-width: 2px;
+  border-style: solid;
+
+  width: 398px;
+  height: 256px;
+  margin-left: 16px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+
+  resize: none;
+}
+
+#map-btn {
+  position: fixed;
+  display: block;
+  float: right;
+  cursor: pointer;
+
+  margin-left: 255px;
+  padding: 7px 12px;
+  border-radius: 8px;
+
+  background-color: black;
+  color: white;
+  transition-duration: 0.3s;
+}
+
+#map-btn:hover {
+  background-color: #821432;
+  transition-duration: 0.3s;
+}
+
+#phone-num, #open-info {
+  font-size: 12px;
+  line-height: 0;
+}
+
+#phone-sym {
+  margin-top: 4px;
+  margin-left: 16px;
+}
+
+#open-sym {
+  margin-left: 17px;
+  font-size: 12px;
+  margin-right: 1px;
+
+  color: green;
+}
+
+#store-logo {
+  display:inline-block;
+  vertical-align: top;
+
+  width: 65px;
+  height: 65px;
+  border-style: solid;
+  border-color: #821432;
+  border-radius: 8px;
+  border-width: 4px;
+
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#roomnav-mic, #roomnav-deaf, #roomnav-cam, #roomnav-share {
+  float: right;
+  cursor: pointer;
+}
+
+#roomnav-mic {
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 9px;
+  padding-bottom: 7px;
+  margin-right: 8px;
+}
+
+#roomnav-deaf {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 9px;
+  padding-bottom: 7px;
+  margin-right: 8px;
+}
+
+#roomnav-cam {
+  padding-left: 9px;
+  padding-right: 9px;
+  padding-top: 9px;
+  padding-bottom: 7px;
+  margin-right: 8px;
+}
+
+#roomnav-share {
+  padding-left: 9px;
+  padding-right: 9px;
+  padding-top: 9px;
+  padding-bottom: 7px;
+}
+
+#roomnav-room {
+  float: left;
+  display: block;
+  background: #ffffff;
+  color: black;
+  text-align: center;
+  padding: 6px 14px;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 12px 4px;
+  border-radius: 32px;
+  border: none;
+
+  width: 18rem;
+
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#roomnav-exit {
+  float: left;
+  display: block;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 7px;
+  padding-bottom: 5px;
+
+  color: black;
+
+  margin-left: 4px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-right: 1px;
+
+  background: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 32px;
+  cursor: pointer;
+
+  position: absolute;
+  top: 16px;
+  left: 61.25%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#roomnav-exit:hover {
+  color: #821432;
+}
+
+#chatbox {
+  width: 72%;
+  font-size: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-left: 16px;
+
+  background-color: white;
+  border-radius: 8px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+
+  display: inline-block;
+  vertical-align: top;
+  resize: none;
+}
+
+#send-box, #emoji {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 12px;
+  padding-right: 12px;
+  cursor: pointer;
+
+  margin-left: 4px;
+
+  background-color: black;
+  color: white;
+
+  border-radius: 8px;
+  transition-duration: 0.3s;
+}
+
+#send-box:hover, #emoji:hover {
+  background-color: #821432;
+  transition-duration: 0.3s;
+}
+
+#room1 {
+  background-color: white;
+  border-radius: 16px;
+  width: 60px;
+  height: 60px;
+
+  text-align: center;
+  font-size: 14px;
+  padding-top: 23px;
+
+  margin-left: 300px;
+  margin-top: 185px;
+
+  cursor: pointer;
+  position: fixed;
+  z-index: 100;
+
+  opacity: 0%;
+}
+
+#room1:hover {
+  opacity: 50%;
+}
+
+#room2 {
+  background-color: white;
+  border-radius: 16px;
+  width: 60px;
+  height: 60px;
+
+  text-align: center;
+  font-size: 14px;
+  padding-top: 23px;
+
+  margin-left: 465px;
+  margin-top: 205px;
+
+  cursor: pointer;
+  position: fixed;
+  z-index: 100;
+
+  opacity: 0%;
+}
+
+#room2:hover {
+  opacity: 50%;
+}
+
+#user1, #user2, #user3, #user4, #stat1, #stat2, #stat3, #stat4 {
+  padding: 6px;
+  display: block;
+  cursor: pointer;
+  text-align: left;
+  transition-duration: 0.3s;
+
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+}
+
+#user1:hover, #user2:hover, #user3:hover, #user4:hover {
+  transition-duration: 0.3s;
+  color: #821432;
+}
+
+#stat1:hover, #stat2:hover, #stat3:hover, #stat4:hover {
+  transition-duration: 0.3s;
+  background-color: #821432;
+  color: white;
+}
