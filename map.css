@@ -1,0 +1,38 @@
+.main .map #google-map {
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main .map {
+  border-radius: 8px;
+  border-style: dashed;
+  border-width: 4px;
+  border-color: #d6cfaa;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 78.65%;
+
+  padding: 0;
+}
+
+#map-title {
+  color: #ceb55a;
+  background-color: #fff;
+  text-align: center;
+  padding: 8px 18px;
+
+  width: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-color: #ceb55a;
+  border-width: 4px;
+  border-radius: 64px;
+  border-style: double;
+}
