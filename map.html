@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Coffii | Map</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="resources/style.css" type="text/css" rel="stylesheet" />
+<link href="resources/base.css" type="text/css" rel="stylesheet" />
+<link href="resources/map.css" type="text/css" rel="stylesheet" />
+<script src="resources/script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Header -->
+
+    <header>
+      <div class="topnav">
+        <img src="images/logo.png">
+        <a href="index.html" id="topnav-home-btn">Home</a>
+        <a class="active" href="map.html">Map</a>
+        <a href="room.html" id="topnav-room">Congee Queen (CHATTING)</a>
+        <a id="topnav-exit" onclick="exitRoom()"><i class="fa fa-times" aria-hidden="true"></i></a>
+        <i class="fa fa-circle" aria-hidden="true" id="topnav-status-dot"></i>
+
+        <div class="profile">
+          <a href="about.html" id="topnav-about"><i class="fa fa-question" aria-hidden="true"></i></a>
+          <a id="topnav-logoff" onclick="logOff()"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
+          <a id="topnav-profile" href="profile.html"><i class="fa fa-user" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div class="topnav-edge"></div>
+    </header>
+
+    <!-- Front Page -->
+
+    <div class="main">
+      <div class="map-title">
+        <h1 id="map-title">Map of Adventure</h1>
+      </div>
+      <div class="map">
+        <iframe id="google-map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3399.7026403935683!2d-76.48412708217185!3d44.231821922409374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scoffee%20in%20Kingston%2C%20ON!5e0!3m2!1sen!2sca!4v1611434267182!5m2!1sen!2sca" width="1200" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
+
+</body>
+
+</html>
